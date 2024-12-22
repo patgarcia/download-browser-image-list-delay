@@ -1,6 +1,9 @@
 # download-browser-image-list-delay
 
 ```javascript
+
+async function wait(delay){ return new Promise(res => setTimeout(res, delay)) }
+
 async function downloadSequentiallyWithDelay(urls, delay = 500) {
   for (const url of urls) {
     try {
